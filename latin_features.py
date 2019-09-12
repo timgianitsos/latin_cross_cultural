@@ -4,6 +4,7 @@ Latin features
 import os
 import subprocess
 import sys
+import qcrit.extract_features
 
 CORPUS_DIR = os.path.join('tesserae', 'texts', 'la')
 
@@ -35,4 +36,8 @@ def _download_corpus():
 			print(f'Your system could not run one of the following commands: {prgrm_names}', file=sys.stderr)
 			raise ex
 
-_download_corpus()
+if __name__ == '__main__':
+	_download_corpus()
+	qcrit.extract_features.main(
+		corpus_dir=CORPUS_DIR, file_extension_to_parse_function={'tess': qcrit.extract_features.parse_tess}
+	)
