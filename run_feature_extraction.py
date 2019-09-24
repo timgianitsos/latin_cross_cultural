@@ -4,6 +4,8 @@ Latin features
 import os
 import subprocess
 import sys
+import re
+
 import qcrit.extract_features
 
 from latin_features import * #pylint: disable = wildcard-import, unused-wildcard-import
@@ -38,8 +40,11 @@ def _download_corpus():
 			print(f'Your system could not run one of the following commands: {prgrm_names}', file=sys.stderr)
 			raise ex
 
+def _parse_tess_remove_nonalphanumeric(file_name):
+	return re.sub(r'[^a-zA-Z0-9α-ωΑ-Ω\n\r]+', ' ', qcrit.extract_features.parse_tess(file_name)).lower()
+
 if __name__ == '__main__':
 	_download_corpus()
 	qcrit.extract_features.main(
-		corpus_dir=CORPUS_DIR, file_extension_to_parse_function={'tess': qcrit.extract_features.parse_tess}
+		corpus_dir=CORPUS_DIR, file_extension_to_parse_function={'tess': _parse_tess_remove_nonalphanumeric}
 	)
