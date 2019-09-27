@@ -3,12 +3,10 @@
 Latin features
 
 Reference:
-https://github.com/qcrit/DSH-2018-LatinProseVerse/
-blob/459458b028e2ff3a234faa2496a279144a758cc8/stylometry/imports/api/stylometry.js
+https://github.com/qcrit/DSH-2018-LatinProseVerse/blob/459458b028e2ff3a234faa2496a279144a758cc8/stylometry/imports/api/stylometry.js
 
 Data:
-https://github.com/qcrit/DSH-2018-LatinProseVerse/
-blob/459458b028e2ff3a234faa2496a279144a758cc8/stylometry_data_final.csv
+https://github.com/qcrit/DSH-2018-LatinProseVerse/blob/459458b028e2ff3a234faa2496a279144a758cc8/stylometry_data_final.csv
 '''
 from functools import reduce
 
@@ -317,3 +315,15 @@ def mean_sentence(text):
 		0
 	)
 	return len_of_all_words / len(text)
+
+@textual_feature(tokenize_type='words')
+def characters(text):
+	return reduce(lambda cur_len, word: cur_len + len(word), text, 0)
+
+@textual_feature(tokenize_type='words')
+def words(text):
+	return len(text)
+
+@textual_feature(tokenize_type='sentence_words')
+def sentences(text):
+	return len(text)

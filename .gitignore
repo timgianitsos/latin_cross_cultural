@@ -192,3 +192,4 @@ GitHub.sublime-settings
 
 # Project-specific data to ignore
 tesserae
+feature_data.pickle

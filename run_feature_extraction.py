@@ -43,8 +43,14 @@ def _download_corpus():
 def _parse_tess_remove_nonalphanumeric(file_name):
 	return re.sub(r'[^a-zA-Z0-9α-ωΑ-Ω\n\r]+', ' ', qcrit.extract_features.parse_tess(file_name)).lower()
 
-if __name__ == '__main__':
+def feature_extraction(output):
+	'''Perform a feature extraction'''
 	_download_corpus()
 	qcrit.extract_features.main(
-		corpus_dir=CORPUS_DIR, file_extension_to_parse_function={'tess': _parse_tess_remove_nonalphanumeric}
+		corpus_dir=CORPUS_DIR,
+		file_extension_to_parse_function={'tess': _parse_tess_remove_nonalphanumeric},
+		output_file=output
 	)
+
+if __name__ == '__main__':
+	feature_extraction(None if len(sys.argv) <= 1 else sys.argv[1])
