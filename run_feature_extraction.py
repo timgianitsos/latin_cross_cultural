@@ -41,7 +41,11 @@ def _download_corpus():
 			raise ex
 
 def _parse_tess_remove_nonalphanumeric(file_name):
-	return re.sub(r'[^a-zA-Z0-9α-ωΑ-Ω\n\r]+', ' ', qcrit.extract_features.parse_tess(file_name)).lower()
+	punct = '\\' + '\\'.join(TERMINAL_PUNCTUATION)
+	return re.sub(
+		fr'[^a-zA-Z0-9α-ωΑ-Ω\n\r{punct}]+', ' ',
+		qcrit.extract_features.parse_tess(file_name)
+	).lower()
 
 def feature_extraction(output):
 	'''Perform a feature extraction'''

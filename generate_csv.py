@@ -21,6 +21,7 @@ def generate_csv():
 		)
 	feature_file = 'feature_data.pickle'
 	if not os.path.isfile(feature_file):
+		print(f'File "{feature_file}" not found. Attempting to extract features.')
 		feature_extraction(feature_file)
 	with open(feature_file, mode='rb') as f:
 		features = pickle.load(f)

@@ -45,7 +45,8 @@ def _count_target_bigram_freq(list_of_words, monograms, bigrams):
 		num_characters += len(word)
 	return num_target / num_characters
 
-setup_tokenizers(terminal_punctuation=('.', '?', '!'))
+TERMINAL_PUNCTUATION = ('.', '?', '!')
+setup_tokenizers(terminal_punctuation=TERMINAL_PUNCTUATION)
 
 #---------------------------------------------------------------------------
 # List 0
