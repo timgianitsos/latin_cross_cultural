@@ -62,16 +62,31 @@ def generate_csv():
 	#If any of the names have commas, that will mess up the csv
 	assert all(',' not in k and ',' not in v for k, v in pretty_name_to_feature_name.items())
 
+	# Remap feature names to remove dots and underscores and to capitalize first letter of every word
+	features = {
+		' '.join(map(
+			lambda s: s[0].upper() + s[1:],
+			filename[filename.rindex(os.sep) + 1: filename.index('.tess')]
+			.replace('.', ' ').replace('_', ' ').split()
+		))
+		:
+		feature_to_value
+		for filename, feature_to_value in features.items()
+	}
+	expected_names = [row[28] for row in csv.reader(open('stylometry_data_expected.csv', mode='r'))][1:]
+
 	output = csv.writer(open(sys.argv[1], mode='w'))
 	output.writerow(pretty_name_to_feature_name.keys())
-	for filename, feature_to_value in features.items():
-		feature_to_value['filename'] = filename
+	for filename in expected_names:
+		csv_row = features.get(filename, {})
+		csv_row['filename'] = filename
+
 		#Rounding to 5 decimal places:
 		#https://github.com/qcrit/DSH-2018-LatinProseVerse/blob/master/stylometry/imports/api/stylometry.js#L769
 		output.writerow(
-			f'{feature_to_value.get(feature_name):.5f}'
-			if isinstance(feature_to_value.get(feature_name), float)
-			else feature_to_value.get(feature_name)
+			f'{csv_row.get(feature_name):.5f}'
+			if isinstance(csv_row.get(feature_name), float)
+			else csv_row.get(feature_name)
 			for feature_name in pretty_name_to_feature_name.values()
 		)
 	print(f'Successfully generated {sys.argv[1]}')
