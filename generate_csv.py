@@ -25,7 +25,7 @@ def generate_csv():
 		('Demonstrative Pronouns', 'demonstrative_pronoun'),
 		('Quidam', 'quidam'),
 		('Reflexive Pronouns', 'reflexive_pronoun'),
-		('Iste', 'reflexive_pronoun'),
+		('Iste', 'iste'),
 		('Alius', 'alius'),
 		('Ipse', 'ipse'),
 		('Idem', 'idem'),
