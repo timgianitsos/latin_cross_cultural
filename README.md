@@ -55,3 +55,9 @@
 	```bash
 	pipenv shell
 	```
+
+## Reference
+
+Features: https://github.com/qcrit/DSH-2018-LatinProseVerse/blob/459458b028e2ff3a234faa2496a279144a758cc8/stylometry/imports/api/stylometry.js
+
+Data: https://github.com/qcrit/DSH-2018-LatinProseVerse/blob/459458b028e2ff3a234faa2496a279144a758cc8/stylometry_data_final.csv

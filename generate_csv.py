@@ -6,19 +6,13 @@ python <this script> name_of_output.csv
 
 import pickle
 from collections import OrderedDict
-import sys
 import os
 import csv
-import getopt
 
 from run_feature_extraction import feature_extraction
 
 def generate_csv():
-	if len(sys.argv) <= 1:
-		raise getopt.GetoptError(
-			'Please provide a command line argument for the output of the csv file\n'
-			'Usage:\n\tpython <this script> <name of some file>.csv'
-		)
+	output_csv = 'stylometry_data_result.csv'
 	feature_file = 'feature_data.pickle'
 	if not os.path.isfile(feature_file):
 		print(f'File "{feature_file}" not found. Attempting to extract features.')
@@ -75,7 +69,7 @@ def generate_csv():
 	}
 	expected_names = [row[28] for row in csv.reader(open('stylometry_data_expected.csv', mode='r'))][1:]
 
-	output = csv.writer(open(sys.argv[1], mode='w'))
+	output = csv.writer(open(output_csv, mode='w'))
 	output.writerow(pretty_name_to_feature_name.keys())
 	for filename in expected_names:
 		csv_row = features.get(filename, {})
@@ -89,7 +83,7 @@ def generate_csv():
 			else csv_row.get(feature_name)
 			for feature_name in pretty_name_to_feature_name.values()
 		)
-	print(f'Successfully generated {sys.argv[1]}')
+	print(f'Successfully generated {output_csv}')
 
 if __name__ == '__main__':
 	generate_csv()
