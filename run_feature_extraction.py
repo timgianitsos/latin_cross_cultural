@@ -17,7 +17,7 @@ def _download_corpus():
 	Downloads latin corpus from tesserae
 
 	Sparse checkout reference here:
-	#https://stackoverflow.com/a/13738951/7102572
+	#https://stackoverflow.com/a/28039894/7102572
 	'''
 	if not os.path.isdir('tesserae'):
 		try:
