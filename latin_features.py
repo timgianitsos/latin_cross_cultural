@@ -289,6 +289,7 @@ def multi_occurence(text):
 		num_characters += len(word)
 	return num_target / num_characters
 
+@textual_feature(tokenize_type='words')
 def endf(text):
 	num_target = 0
 	num_characters = 0
