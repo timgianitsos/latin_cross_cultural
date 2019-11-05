@@ -57,4 +57,8 @@ def feature_extraction(output):
 	)
 
 if __name__ == '__main__':
-	feature_extraction(None if len(sys.argv) <= 1 else sys.argv[1])
+    try:
+        os.remove(sys.argv[1])
+    except:
+        pass
+    feature_extraction(None if len(sys.argv) <= 1 else sys.argv[1])
