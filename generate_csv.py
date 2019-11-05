@@ -44,7 +44,7 @@ def generate_csv():
 		('Mean Length Relative Clauses', '?'),
 		('Gerunds and Gerundives', 'end_gerund'),
 		('Cum', 'cum_clause'),
-		('Conjunctions', '?'),
+		('Conjunctions', 'multi_occurence'),
 		('Vocatives', '?'),
 		('Mean Sentence Length', 'mean_sentence'),
 		('Characters', 'characters'),
