@@ -336,16 +336,19 @@ def sentences(text):
 
 @textual_feature(tokenize_type='words')
 def mean_relative(text):
+    print(text)
     import re
     import statistics
-
+    text = " ".join(text)
     relative_group = "|".join(RELATIVES)
     pattern = rf'\b({relative_group})\b.+?[,:\.!;]'
-    matches = re.finditer(pattern, test)
+
+    matches = re.finditer(pattern, text)
     # Leave to troubleshoot
     # for match in matches:
     #     print(text[match.start(0):match.end(0)])
     len_rel_clauses = [match.end(0) - match.start(0) for match in matches]
+    print(statistics.mean(len_rel_clauses))
     return statistics.mean(len_rel_clauses)
 
 if __name__ == "__main__":
