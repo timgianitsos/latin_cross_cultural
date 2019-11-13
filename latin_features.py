@@ -2,9 +2,17 @@
 '''
 Latin features
 '''
+import re
+
 from functools import reduce
 
 from qcrit.textual_feature import textual_feature, setup_tokenizers
+
+#---------------------------------------------------------------------------
+# Constants
+
+RELATIVES = {'qui', 'cuius', 'cui', 'quem', 'quo', 'quae', 'quam',
+			'qua', 'quod', 'quorum', 'quibus', 'quos', 'quarum', 'quas'}
 
 #---------------------------------------------------------------------------
 # Helpers
@@ -258,6 +266,8 @@ def end_gerund(text):
 		num_characters += len(word)
 	return num_gerund / num_characters
 
+
+
 @textual_feature(tokenize_type='words')
 def cum_clause(text):
 	num_cum_clause = 0
@@ -323,3 +333,21 @@ def words(text):
 @textual_feature(tokenize_type='sentence_words')
 def sentences(text):
 	return len(text)
+
+@textual_feature(tokenize_type='words')
+def mean_relative(text):
+    import re
+    import statistics
+
+    relative_group = "|".join(RELATIVES)
+    pattern = rf'\b({relative_group})\b.+?[,:\.!;]'
+    matches = re.finditer(pattern, test)
+    # Leave to troubleshoot
+    # for match in matches:
+    #     print(text[match.start(0):match.end(0)])
+    len_rel_clauses = [match.end(0) - match.start(0) for match in matches]
+    return statistics.mean(len_rel_clauses)
+
+if __name__ == "__main__":
+    test = """Interea ea legione quam secum habebat militibusque, qui ex provincia convenerant, a lacu Lemanno, qui in flumen Rhodanum influit, ad montem Iuram, qui fines Sequanorum ab Helvetiis dividit, milia passuum XVIIII murum in altitudinem pedum sedecim fossamque perducit."""
+    print(mean_relative(test))
