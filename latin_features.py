@@ -6,7 +6,7 @@ import re
 
 from functools import reduce
 
-from qcrit.textual_feature import textual_feature, setup_tokenizers
+from qcrit.textual_feature import textual_feature
 
 #---------------------------------------------------------------------------
 # Constants
@@ -46,9 +46,6 @@ def _count_target_bigram_freq(list_of_words, monograms, bigrams):
 			bigram_first_half = None
 		num_characters += len(word)
 	return num_target / num_characters
-
-TERMINAL_PUNCTUATION = ('.', '?', '!')
-setup_tokenizers(terminal_punctuation=TERMINAL_PUNCTUATION)
 
 #---------------------------------------------------------------------------
 # List 0

@@ -7,10 +7,12 @@ import sys
 import re
 
 import qcrit.extract_features
-
-from latin_features import * #pylint: disable = wildcard-import, unused-wildcard-import
+from qcrit.textual_feature import textual_feature, setup_tokenizers
 
 CORPUS_DIR = os.path.join('tesserae', 'texts', 'la')
+
+TERMINAL_PUNCTUATION = ('.', '?', '!')
+setup_tokenizers(terminal_punctuation=TERMINAL_PUNCTUATION)
 
 def _download_corpus():
 	'''
@@ -47,9 +49,14 @@ def _parse_tess_remove_nonalphanumeric(file_name):
 		qcrit.extract_features.parse_tess(file_name)
 	).lower()
 
-def feature_extraction(output):
+def feature_extraction(output, use_universal_features):
 	'''Perform a feature extraction'''
 	_download_corpus()
+	if use_universal_features == '-u':
+		import qcrit.features.universal_features #seemingly unused, but allows the recognition of features
+	else:
+		import latin_features
+
 	qcrit.extract_features.main(
 		corpus_dir=CORPUS_DIR,
 		file_extension_to_parse_function={'tess': _parse_tess_remove_nonalphanumeric},
@@ -57,8 +64,11 @@ def feature_extraction(output):
 	)
 
 if __name__ == '__main__':
-    try:
-        os.remove(sys.argv[1])
-    except:
-        pass
-    feature_extraction(None if len(sys.argv) <= 1 else sys.argv[1])
+	try:
+		os.remove(sys.argv[1])
+	except:
+		pass
+	feature_extraction(
+		None if len(sys.argv) <= 1 else sys.argv[1],
+		None if len(sys.argv) <= 2 else sys.argv[2],
+	)
