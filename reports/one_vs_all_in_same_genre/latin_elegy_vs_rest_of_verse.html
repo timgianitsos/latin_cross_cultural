@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>stdin</title>
+</head>
+<body style="color:white; background-color:black">
+<pre>
+<span style="filter: contrast(70%) brightness(190%);color:red;">Random Forest cross validation</span>
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">RF parameters</span> = {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': None, 'oob_score': False, 'random_state': 0, 'verbose': 0, 'warm_start': False}
+
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">Validate fold 1:</span>
+		<span style="filter: contrast(70%) brightness(190%);color:yellow;">Stats:</span>
+		# correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">42</span> / 44
+		% correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">95.4545</span>%
+		# elegy: <span style="filter: contrast(70%) brightness(190%);color:lime;">4</span> / 5
+		% elegy: <span style="filter: contrast(70%) brightness(190%);color:lime;">80.0000</span>%
+		# miscellaneous_or_epic_or_drama: <span style="filter: contrast(70%) brightness(190%);color:lime;">38</span> / 39
+		% miscellaneous_or_epic_or_drama: <span style="filter: contrast(70%) brightness(190%);color:lime;">97.4359</span>%
+		F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">95.4545</span>%
+		F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">88.7179</span>%
+		F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">95.4545</span>%
+
+
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">Validate fold 2:</span>
+		<span style="filter: contrast(70%) brightness(190%);color:yellow;">Stats:</span>
+		# correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">40</span> / 44
+		% correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">90.9091</span>%
+		# elegy: <span style="filter: contrast(70%) brightness(190%);color:lime;">1</span> / 5
+		% elegy: <span style="filter: contrast(70%) brightness(190%);color:lime;">20.0000</span>%
+		# miscellaneous_or_epic_or_drama: <span style="filter: contrast(70%) brightness(190%);color:lime;">39</span> / 39
+		% miscellaneous_or_epic_or_drama: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">90.9091</span>%
+		F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">64.2276</span>%
+		F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">88.1005</span>%
+
+
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">Validate fold 3:</span>
+		<span style="filter: contrast(70%) brightness(190%);color:yellow;">Stats:</span>
+		# correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">38</span> / 44
+		% correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">86.3636</span>%
+		# elegy: <span style="filter: contrast(70%) brightness(190%);color:lime;">1</span> / 6
+		% elegy: <span style="filter: contrast(70%) brightness(190%);color:lime;">16.6667</span>%
+		# miscellaneous_or_epic_or_drama: <span style="filter: contrast(70%) brightness(190%);color:lime;">37</span> / 38
+		% miscellaneous_or_epic_or_drama: <span style="filter: contrast(70%) brightness(190%);color:lime;">97.3684</span>%
+		F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">86.3636</span>%
+		F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">58.7500</span>%
+		F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">83.2955</span>%
+
+
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">Validate fold 4:</span>
+		<span style="filter: contrast(70%) brightness(190%);color:yellow;">Stats:</span>
+		# correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">41</span> / 44
+		% correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">93.1818</span>%
+		# elegy: <span style="filter: contrast(70%) brightness(190%);color:lime;">3</span> / 6
+		% elegy: <span style="filter: contrast(70%) brightness(190%);color:lime;">50.0000</span>%
+		# miscellaneous_or_epic_or_drama: <span style="filter: contrast(70%) brightness(190%);color:lime;">38</span> / 38
+		% miscellaneous_or_epic_or_drama: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">93.1818</span>%
+		F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">81.4346</span>%
+		F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">92.1749</span>%
+
+
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">Validate fold 5:</span>
+		<span style="filter: contrast(70%) brightness(190%);color:yellow;">Stats:</span>
+		# correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">41</span> / 44
+		% correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">93.1818</span>%
+		# elegy: <span style="filter: contrast(70%) brightness(190%);color:lime;">3</span> / 6
+		% elegy: <span style="filter: contrast(70%) brightness(190%);color:lime;">50.0000</span>%
+		# miscellaneous_or_epic_or_drama: <span style="filter: contrast(70%) brightness(190%);color:lime;">38</span> / 38
+		% miscellaneous_or_epic_or_drama: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">93.1818</span>%
+		F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">81.4346</span>%
+		F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">92.1749</span>%
+
+
+
+<span style="filter: contrast(70%) brightness(190%);color:lime;">Elapsed time: 0.1238 seconds</span>
+
+<span style="filter: contrast(70%) brightness(190%);color:red;">Random Forest averaged cross validation</span>
+Obtain misclassifications by testing different RF seeds and different data splits
+RF seeds tested: 0-9 (inclusive)
+Cross validation splitter seeds tested: 0-9 (inclusive)
+Number of splits: 5
+Labels tested: [elegy (value of elegy), miscellaneous_or_epic_or_drama (value of miscellaneous_or_epic_or_drama)]
+Features tested: ['alius', 'anteq', 'characters', 'conditional_clauses', 'cum_clause', 'demonstrative_pronoun', 'dum', 'end_gerund', 'endf', 'idem', 'interrogative', 'ipse', 'iste', 'mean_sentence', 'multi_occurence', 'personal_pronoun', 'prepositions', 'priu', 'quidam', 'quin', 'quom', 'reflexive_pronoun', 'sentences', 'startf', 'superlatives', 'ut', 'words']
+RF parameters: {'bootstrap': True, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': 1, 'oob_score': False, 'verbose': 0, 'warm_start': False}
+
+<span style="filter: contrast(70%) brightness(190%);color:yellow;">Averaged percentages from 500 (10 * 10 * 5) trials.</span>
+	Percentage correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">91.6500</span>% +/- standard deviation of 3.3340%
+	F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">91.6500</span>% +/- standard deviation of 3.3340%
+	F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">75.6576</span>% +/- standard deviation of 11.0037%
+	F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">90.3839</span>% +/- standard deviation of 4.0574%
+
+
+<span style="filter: contrast(70%) brightness(190%);color:lime;">Elapsed time: 12.7134 seconds</span>
+
+<span style="filter: contrast(70%) brightness(190%);color:red;">Random Forest misclassifications</span>
+Obtain misclassifications by testing different RF seeds and different data splits
+RF seeds tested: 0-9 (inclusive)
+Cross validation splitter seeds tested: 0-9 (inclusive)
+Number of splits: 5
+Labels tested: [elegy (value of elegy), miscellaneous_or_epic_or_drama (value of miscellaneous_or_epic_or_drama)]
+Features tested: ['alius', 'anteq', 'characters', 'conditional_clauses', 'cum_clause', 'demonstrative_pronoun', 'dum', 'end_gerund', 'endf', 'idem', 'interrogative', 'ipse', 'iste', 'mean_sentence', 'multi_occurence', 'personal_pronoun', 'prepositions', 'priu', 'quidam', 'quin', 'quom', 'reflexive_pronoun', 'sentences', 'startf', 'superlatives', 'ut', 'words']
+RF parameters: {'bootstrap': True, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': 1, 'oob_score': False, 'verbose': 0, 'warm_start': False}
+
+<span style="filter: contrast(70%) brightness(190%);color:yellow;">Misclassifications from 500 (10 * 10 * 5) trials. Each file was in the testing set 1 / 5 of the time (100 times).</span>
+100 / 100 (100.000%): tesserae/texts/la/rutilius.de_reditu.tess
+ 99 / 100 (99.000%): tesserae/texts/la/ovid.medicamina_faciei_femineae.tess
+ 96 / 100 (96.000%): tesserae/texts/la/ovid.ibis.tess
+ 96 / 100 (96.000%): tesserae/texts/la/tibullus.elegies.tess
+ 95 / 100 (95.000%): tesserae/texts/la/ovid.fasti/ovid.fasti.part.2.tess
+ 93 / 100 (93.000%): tesserae/texts/la/ovid.tristia/ovid.tristia.part.2.tess
+ 83 / 100 (83.000%): tesserae/texts/la/ovid.fasti/ovid.fasti.part.4.tess
+ 81 / 100 (81.000%): tesserae/texts/la/ovid.fasti/ovid.fasti.part.5.tess
+ 78 / 100 (78.000%): tesserae/texts/la/ovid.tristia/ovid.tristia.part.5.tess
+ 70 / 100 (70.000%): tesserae/texts/la/ovid.amores/ovid.amores.part.3.tess
+ 70 / 100 (70.000%): tesserae/texts/la/ovid.amores/ovid.amores.part.1.tess
+ 69 / 100 (69.000%): tesserae/texts/la/ovid.remedia_amoris.tess
+ 64 / 100 (64.000%): tesserae/texts/la/ovid.tristia/ovid.tristia.part.3.tess
+ 49 / 100 (49.000%): tesserae/texts/la/ovid.fasti/ovid.fasti.part.6.tess
+ 48 / 100 (48.000%): tesserae/texts/la/ovid.fasti/ovid.fasti.part.3.tess
+ 48 / 100 (48.000%): tesserae/texts/la/ovid.amores/ovid.amores.part.2.tess
+ 47 / 100 (47.000%): tesserae/texts/la/propertius.elegies.tess
+ 42 / 100 (42.000%): tesserae/texts/la/ovid.fasti/ovid.fasti.part.1.tess
+ 39 / 100 (39.000%): tesserae/texts/la/ovid.ex_ponto/ovid.ex_ponto.part.4.tess
+ 36 / 100 (36.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.13.tess
+ 36 / 100 (36.000%): tesserae/texts/la/ovid.tristia/ovid.tristia.part.4.tess
+ 30 / 100 (30.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.14.tess
+ 26 / 100 (26.000%): tesserae/texts/la/ovid.heroides.tess
+ 26 / 100 (26.000%): tesserae/texts/la/ovid.ars_amatoria/ovid.ars_amatoria.part.3.tess
+ 26 / 100 (26.000%): tesserae/texts/la/ovid.ars_amatoria/ovid.ars_amatoria.part.2.tess
+ 23 / 100 (23.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.7.tess
+ 23 / 100 (23.000%): tesserae/texts/la/prudentius.epilogus.tess
+ 22 / 100 (22.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.9.tess
+ 19 / 100 (19.000%): tesserae/texts/la/vergil.eclogues.tess
+ 19 / 100 (19.000%): tesserae/texts/la/ovid.ex_ponto/ovid.ex_ponto.part.2.tess
+ 15 / 100 (15.000%): tesserae/texts/la/juvenal.satires.tess
+ 11 / 100 (11.000%): tesserae/texts/la/persius.satires.tess
+ 11 / 100 (11.000%): tesserae/texts/la/seneca.phoenissae.tess
+ 11 / 100 (11.000%): tesserae/texts/la/ovid.metamorphoses/ovid.metamorphoses.part.9.tess
+  9 / 100 (9.000%): tesserae/texts/la/ovid.metamorphoses/ovid.metamorphoses.part.13.tess
+  9 / 100 (9.000%): tesserae/texts/la/horace.carmen_saeculare.tess
+  9 / 100 (9.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.8.tess
+  9 / 100 (9.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.6.tess
+  9 / 100 (9.000%): tesserae/texts/la/ovid.ex_ponto/ovid.ex_ponto.part.3.tess
+  7 / 100 (7.000%): tesserae/texts/la/ovid.ars_amatoria/ovid.ars_amatoria.part.1.tess
+  7 / 100 (7.000%): tesserae/texts/la/valerius_flaccus.argonautica/valerius_flaccus.argonautica.part.7.tess
+  7 / 100 (7.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.5.tess
+  6 / 100 (6.000%): tesserae/texts/la/horace.satires/horace.satires.part.1.tess
+  6 / 100 (6.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.12.tess
+  6 / 100 (6.000%): tesserae/texts/la/terence.adelphi.tess
+  5 / 100 (5.000%): tesserae/texts/la/anonymous.laudes_domini.tess
+  4 / 100 (4.000%): tesserae/texts/la/ovid.metamorphoses/ovid.metamorphoses.part.2.tess
+  4 / 100 (4.000%): tesserae/texts/la/juvencus.historia_evangelica/juvencus.historia_evangelica.part.2.tess
+  3 / 100 (3.000%): tesserae/texts/la/ennodius.opera.tess
+  3 / 100 (3.000%): tesserae/texts/la/juvencus.historia_evangelica/juvencus.historia_evangelica.part.4.tess
+  3 / 100 (3.000%): tesserae/texts/la/ovid.metamorphoses/ovid.metamorphoses.part.3.tess
+  3 / 100 (3.000%): tesserae/texts/la/ovid.metamorphoses/ovid.metamorphoses.part.1.tess
+  3 / 100 (3.000%): tesserae/texts/la/prudentius.dittochaeon.tess
+  3 / 100 (3.000%): tesserae/texts/la/terence.hecyra.tess
+  3 / 100 (3.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.3.tess
+  3 / 100 (3.000%): tesserae/texts/la/ovid.metamorphoses/ovid.metamorphoses.part.6.tess
+  2 / 100 (2.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.4.tess
+  2 / 100 (2.000%): tesserae/texts/la/ovid.metamorphoses/ovid.metamorphoses.part.10.tess
+  2 / 100 (2.000%): tesserae/texts/la/ovid.metamorphoses/ovid.metamorphoses.part.14.tess
+  1 / 100 (1.000%): tesserae/texts/la/seneca.thyestes.tess
+  1 / 100 (1.000%): tesserae/texts/la/juvencus.historia_evangelica/juvencus.historia_evangelica.part.3.tess
+  1 / 100 (1.000%): tesserae/texts/la/ovid.metamorphoses/ovid.metamorphoses.part.15.tess
+  1 / 100 (1.000%): tesserae/texts/la/martial.epigrams/martial.epigrams.part.1.tess
+  1 / 100 (1.000%): tesserae/texts/la/lucretius.de_rerum_natura/lucretius.de_rerum_natura.part.6.tess
+  1 / 100 (1.000%): tesserae/texts/la/lucretius.de_rerum_natura/lucretius.de_rerum_natura.part.4.tess
+  1 / 100 (1.000%): tesserae/texts/la/terence.andria.tess
+  1 / 100 (1.000%): tesserae/texts/la/juvencus.historia_evangelica/juvencus.historia_evangelica.part.1.tess
+  1 / 100 (1.000%): tesserae/texts/la/lucan.bellum_civile/lucan.bellum_civile.part.3.tess
+
+
+<span style="filter: contrast(70%) brightness(190%);color:lime;">Elapsed time: 11.0646 seconds</span>
+
+<span style="filter: contrast(70%) brightness(190%);color:red;">Random Forest Gini feature rankings</span>
+Obtain rankings by testing different RF seeds and different data splits
+RF seeds tested: 0-9 (inclusive)
+Cross validation splitter seeds tested: 0-9 (inclusive)
+Number of splits: 5
+Labels tested: [elegy (value of elegy), miscellaneous_or_epic_or_drama (value of miscellaneous_or_epic_or_drama)]
+Features tested: ['alius', 'anteq', 'characters', 'conditional_clauses', 'cum_clause', 'demonstrative_pronoun', 'dum', 'end_gerund', 'endf', 'idem', 'interrogative', 'ipse', 'iste', 'mean_sentence', 'multi_occurence', 'personal_pronoun', 'prepositions', 'priu', 'quidam', 'quin', 'quom', 'reflexive_pronoun', 'sentences', 'startf', 'superlatives', 'ut', 'words']
+RF parameters: {'bootstrap': True, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': 1, 'oob_score': False, 'verbose': 0, 'warm_start': False}
+
+<span style="filter: contrast(70%) brightness(190%);color:yellow;">Gini importance averages from 500 (10 * 10 * 5) trials</span>
+	0.080208 +/- standard deviation of 0.034431: demonstrative_pronoun
+	0.064703 +/- standard deviation of 0.030468: startf
+	0.062862 +/- standard deviation of 0.031905: quidam
+	0.055458 +/- standard deviation of 0.027540: ipse
+	0.054692 +/- standard deviation of 0.026970: multi_occurence
+	0.054137 +/- standard deviation of 0.028203: ut
+	0.053206 +/- standard deviation of 0.029813: reflexive_pronoun
+	0.051690 +/- standard deviation of 0.029897: interrogative
+	0.047213 +/- standard deviation of 0.026653: personal_pronoun
+	0.043083 +/- standard deviation of 0.022690: characters
+	0.041954 +/- standard deviation of 0.025661: cum_clause
+	0.038733 +/- standard deviation of 0.023946: mean_sentence
+	0.038676 +/- standard deviation of 0.023403: words
+	0.033454 +/- standard deviation of 0.021928: alius
+	0.031551 +/- standard deviation of 0.020235: conditional_clauses
+	0.031209 +/- standard deviation of 0.019678: superlatives
+	0.030066 +/- standard deviation of 0.020887: iste
+	0.029522 +/- standard deviation of 0.019159: sentences
+	0.028011 +/- standard deviation of 0.016675: dum
+	0.025834 +/- standard deviation of 0.017614: endf
+	0.022953 +/- standard deviation of 0.015643: idem
+	0.022576 +/- standard deviation of 0.016063: prepositions
+	0.020752 +/- standard deviation of 0.016545: quin
+	0.020158 +/- standard deviation of 0.013842: end_gerund
+	0.010446 +/- standard deviation of 0.012161: quom
+	0.005884 +/- standard deviation of 0.007697: priu
+	0.000967 +/- standard deviation of 0.002471: anteq
+
+
+<span style="filter: contrast(70%) brightness(190%);color:lime;">Elapsed time: 11.0028 seconds</span>
+
+<span style="filter: contrast(70%) brightness(190%);color:red;">Random Forest permutation importance feature rankings</span>
+Obtain rankings by testing different RF seeds and different data splits
+RF seeds tested: 0-4 (inclusive)
+Cross validation splitter seeds tested: 0-4 (inclusive)
+Number of splits: 5
+Number of permutations tested: 5
+Labels tested: [elegy (value of elegy), miscellaneous_or_epic_or_drama (value of miscellaneous_or_epic_or_drama)]
+Features tested: ['alius', 'anteq', 'characters', 'conditional_clauses', 'cum_clause', 'demonstrative_pronoun', 'dum', 'end_gerund', 'endf', 'idem', 'interrogative', 'ipse', 'iste', 'mean_sentence', 'multi_occurence', 'personal_pronoun', 'prepositions', 'priu', 'quidam', 'quin', 'quom', 'reflexive_pronoun', 'sentences', 'startf', 'superlatives', 'ut', 'words']
+RF parameters: {'bootstrap': True, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': 1, 'oob_score': False, 'verbose': 0, 'warm_start': False}
+
+<span style="filter: contrast(70%) brightness(190%);color:yellow;">Permutation importance averages from 625 (5 * 5 * 5 * 5) trials</span>
+	0.017964 +/- standard deviation of 0.000689: demonstrative_pronoun
+	0.010145 +/- standard deviation of 0.000508: startf
+	0.010036 +/- standard deviation of 0.000400: multi_occurence
+	0.009855 +/- standard deviation of 0.000484: quidam
+	0.007491 +/- standard deviation of 0.000443: ipse
+	0.006145 +/- standard deviation of 0.000436: personal_pronoun
+	0.005382 +/- standard deviation of 0.000326: reflexive_pronoun
+	0.004945 +/- standard deviation of 0.000461: ut
+	0.004873 +/- standard deviation of 0.000297: mean_sentence
+	0.004836 +/- standard deviation of 0.000401: cum_clause
+	0.003018 +/- standard deviation of 0.000350: interrogative
+	0.002945 +/- standard deviation of 0.000220: conditional_clauses
+	0.002873 +/- standard deviation of 0.000214: characters
+	0.002873 +/- standard deviation of 0.000326: iste
+	0.001709 +/- standard deviation of 0.000168: words
+	0.000764 +/- standard deviation of 0.000131: quin
+	0.000691 +/- standard deviation of 0.000131: prepositions
+	0.000473 +/- standard deviation of 0.000134: sentences
+	0.000436 +/- standard deviation of 0.000038: quom
+	0.000327 +/- standard deviation of 0.000149: endf
+	0.000145 +/- standard deviation of 0.000177: superlatives
+	0.000109 +/- standard deviation of 0.000163: idem
+	-0.000073 +/- standard deviation of 0.000013: priu
+	-0.000109 +/- standard deviation of 0.000007: anteq
+	-0.000182 +/- standard deviation of 0.000116: dum
+	-0.000909 +/- standard deviation of 0.000198: alius
+	-0.001418 +/- standard deviation of 0.000166: end_gerund
+
+
+<span style="filter: contrast(70%) brightness(190%);color:lime;">Elapsed time: 34.6139 seconds</span>
+
+</pre>
+</body>
+</html>

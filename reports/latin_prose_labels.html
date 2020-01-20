@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>stdin</title>
+</head>
+<body style="color:white; background-color:black">
+<pre>
+<span style="filter: contrast(70%) brightness(190%);color:red;">Random Forest cross validation</span>
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">RF parameters</span> = {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': None, 'oob_score': False, 'random_state': 0, 'verbose': 0, 'warm_start': False}
+
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">Validate fold 1:</span>
+		<span style="filter: contrast(70%) brightness(190%);color:yellow;">Stats:</span>
+		# correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">57</span> / 71
+		% correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">80.2817</span>%
+		# history: <span style="filter: contrast(70%) brightness(190%);color:lime;">17</span> / 18
+		% history: <span style="filter: contrast(70%) brightness(190%);color:lime;">94.4444</span>%
+		# oratory: <span style="filter: contrast(70%) brightness(190%);color:lime;">9</span> / 13
+		% oratory: <span style="filter: contrast(70%) brightness(190%);color:lime;">69.2308</span>%
+		# miscellaneous: <span style="filter: contrast(70%) brightness(190%);color:lime;">4</span> / 8
+		% miscellaneous: <span style="filter: contrast(70%) brightness(190%);color:lime;">50.0000</span>%
+		# letters: <span style="filter: contrast(70%) brightness(190%);color:lime;">12</span> / 13
+		% letters: <span style="filter: contrast(70%) brightness(190%);color:lime;">92.3077</span>%
+		# technical_treatise: <span style="filter: contrast(70%) brightness(190%);color:lime;">6</span> / 8
+		% technical_treatise: <span style="filter: contrast(70%) brightness(190%);color:lime;">75.0000</span>%
+		# philosophy: <span style="filter: contrast(70%) brightness(190%);color:lime;">9</span> / 11
+		% philosophy: <span style="filter: contrast(70%) brightness(190%);color:lime;">81.8182</span>%
+		F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">80.2817</span>%
+		F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">77.2165</span>%
+		F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">79.7914</span>%
+
+
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">Validate fold 2:</span>
+		<span style="filter: contrast(70%) brightness(190%);color:yellow;">Stats:</span>
+		# correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">65</span> / 71
+		% correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">91.5493</span>%
+		# history: <span style="filter: contrast(70%) brightness(190%);color:lime;">18</span> / 18
+		% history: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		# oratory: <span style="filter: contrast(70%) brightness(190%);color:lime;">12</span> / 13
+		% oratory: <span style="filter: contrast(70%) brightness(190%);color:lime;">92.3077</span>%
+		# miscellaneous: <span style="filter: contrast(70%) brightness(190%);color:lime;">7</span> / 8
+		% miscellaneous: <span style="filter: contrast(70%) brightness(190%);color:lime;">87.5000</span>%
+		# letters: <span style="filter: contrast(70%) brightness(190%);color:lime;">12</span> / 13
+		% letters: <span style="filter: contrast(70%) brightness(190%);color:lime;">92.3077</span>%
+		# technical_treatise: <span style="filter: contrast(70%) brightness(190%);color:lime;">7</span> / 8
+		% technical_treatise: <span style="filter: contrast(70%) brightness(190%);color:lime;">87.5000</span>%
+		# philosophy: <span style="filter: contrast(70%) brightness(190%);color:lime;">9</span> / 11
+		% philosophy: <span style="filter: contrast(70%) brightness(190%);color:lime;">81.8182</span>%
+		F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">91.5493</span>%
+		F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">90.2845</span>%
+		F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">91.5994</span>%
+
+
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">Validate fold 3:</span>
+		<span style="filter: contrast(70%) brightness(190%);color:yellow;">Stats:</span>
+		# correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">57</span> / 71
+		% correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">80.2817</span>%
+		# history: <span style="filter: contrast(70%) brightness(190%);color:lime;">18</span> / 18
+		% history: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		# oratory: <span style="filter: contrast(70%) brightness(190%);color:lime;">9</span> / 13
+		% oratory: <span style="filter: contrast(70%) brightness(190%);color:lime;">69.2308</span>%
+		# miscellaneous: <span style="filter: contrast(70%) brightness(190%);color:lime;">6</span> / 8
+		% miscellaneous: <span style="filter: contrast(70%) brightness(190%);color:lime;">75.0000</span>%
+		# letters: <span style="filter: contrast(70%) brightness(190%);color:lime;">10</span> / 12
+		% letters: <span style="filter: contrast(70%) brightness(190%);color:lime;">83.3333</span>%
+		# technical_treatise: <span style="filter: contrast(70%) brightness(190%);color:lime;">6</span> / 9
+		% technical_treatise: <span style="filter: contrast(70%) brightness(190%);color:lime;">66.6667</span>%
+		# philosophy: <span style="filter: contrast(70%) brightness(190%);color:lime;">8</span> / 11
+		% philosophy: <span style="filter: contrast(70%) brightness(190%);color:lime;">72.7273</span>%
+		F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">80.2817</span>%
+		F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">79.4122</span>%
+		F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">80.7333</span>%
+
+
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">Validate fold 4:</span>
+		<span style="filter: contrast(70%) brightness(190%);color:yellow;">Stats:</span>
+		# correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">64</span> / 71
+		% correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">90.1408</span>%
+		# history: <span style="filter: contrast(70%) brightness(190%);color:lime;">18</span> / 18
+		% history: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		# oratory: <span style="filter: contrast(70%) brightness(190%);color:lime;">13</span> / 13
+		% oratory: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		# miscellaneous: <span style="filter: contrast(70%) brightness(190%);color:lime;">8</span> / 8
+		% miscellaneous: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		# letters: <span style="filter: contrast(70%) brightness(190%);color:lime;">11</span> / 12
+		% letters: <span style="filter: contrast(70%) brightness(190%);color:lime;">91.6667</span>%
+		# technical_treatise: <span style="filter: contrast(70%) brightness(190%);color:lime;">7</span> / 9
+		% technical_treatise: <span style="filter: contrast(70%) brightness(190%);color:lime;">77.7778</span>%
+		# philosophy: <span style="filter: contrast(70%) brightness(190%);color:lime;">7</span> / 11
+		% philosophy: <span style="filter: contrast(70%) brightness(190%);color:lime;">63.6364</span>%
+		F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">90.1408</span>%
+		F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">88.9239</span>%
+		F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">89.8824</span>%
+
+
+	<span style="filter: contrast(70%) brightness(190%);color:yellow;">Validate fold 5:</span>
+		<span style="filter: contrast(70%) brightness(190%);color:yellow;">Stats:</span>
+		# correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">64</span> / 71
+		% correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">90.1408</span>%
+		# history: <span style="filter: contrast(70%) brightness(190%);color:lime;">18</span> / 18
+		% history: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		# oratory: <span style="filter: contrast(70%) brightness(190%);color:lime;">9</span> / 12
+		% oratory: <span style="filter: contrast(70%) brightness(190%);color:lime;">75.0000</span>%
+		# miscellaneous: <span style="filter: contrast(70%) brightness(190%);color:lime;">8</span> / 8
+		% miscellaneous: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		# letters: <span style="filter: contrast(70%) brightness(190%);color:lime;">13</span> / 13
+		% letters: <span style="filter: contrast(70%) brightness(190%);color:lime;">100.0000</span>%
+		# technical_treatise: <span style="filter: contrast(70%) brightness(190%);color:lime;">8</span> / 9
+		% technical_treatise: <span style="filter: contrast(70%) brightness(190%);color:lime;">88.8889</span>%
+		# philosophy: <span style="filter: contrast(70%) brightness(190%);color:lime;">8</span> / 11
+		% philosophy: <span style="filter: contrast(70%) brightness(190%);color:lime;">72.7273</span>%
+		F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">90.1408</span>%
+		F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">89.0852</span>%
+		F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">89.8234</span>%
+
+
+
+<span style="filter: contrast(70%) brightness(190%);color:lime;">Elapsed time: 0.1372 seconds</span>
+
+<span style="filter: contrast(70%) brightness(190%);color:red;">Random Forest averaged cross validation</span>
+Obtain misclassifications by testing different RF seeds and different data splits
+RF seeds tested: 0-9 (inclusive)
+Cross validation splitter seeds tested: 0-9 (inclusive)
+Number of splits: 5
+Labels tested: [history (value of history), oratory (value of oratory), miscellaneous (value of miscellaneous), letters (value of letters), technical_treatise (value of technical_treatise), philosophy (value of philosophy)]
+Features tested: ['alius', 'anteq', 'characters', 'conditional_clauses', 'cum_clause', 'demonstrative_pronoun', 'dum', 'end_gerund', 'endf', 'idem', 'interrogative', 'ipse', 'iste', 'mean_sentence', 'multi_occurence', 'personal_pronoun', 'prepositions', 'priu', 'quidam', 'quin', 'quom', 'reflexive_pronoun', 'sentences', 'startf', 'superlatives', 'ut', 'words']
+RF parameters: {'bootstrap': True, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': 1, 'oob_score': False, 'verbose': 0, 'warm_start': False}
+
+<span style="filter: contrast(70%) brightness(190%);color:yellow;">Averaged percentages from 500 (10 * 10 * 5) trials.</span>
+	Percentage correct: <span style="filter: contrast(70%) brightness(190%);color:lime;">87.3634</span>% +/- standard deviation of 3.7860%
+	F1 micro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">87.3634</span>% +/- standard deviation of 3.7860%
+	F1 macro score: <span style="filter: contrast(70%) brightness(190%);color:lime;">86.1839</span>% +/- standard deviation of 4.1805%
+	F1 weighted score: <span style="filter: contrast(70%) brightness(190%);color:lime;">87.0845</span>% +/- standard deviation of 3.8960%
+
+
+<span style="filter: contrast(70%) brightness(190%);color:lime;">Elapsed time: 15.1422 seconds</span>
+
+<span style="filter: contrast(70%) brightness(190%);color:red;">Random Forest misclassifications</span>
+Obtain misclassifications by testing different RF seeds and different data splits
+RF seeds tested: 0-9 (inclusive)
+Cross validation splitter seeds tested: 0-9 (inclusive)
+Number of splits: 5
+Labels tested: [history (value of history), oratory (value of oratory), miscellaneous (value of miscellaneous), letters (value of letters), technical_treatise (value of technical_treatise), philosophy (value of philosophy)]
+Features tested: ['alius', 'anteq', 'characters', 'conditional_clauses', 'cum_clause', 'demonstrative_pronoun', 'dum', 'end_gerund', 'endf', 'idem', 'interrogative', 'ipse', 'iste', 'mean_sentence', 'multi_occurence', 'personal_pronoun', 'prepositions', 'priu', 'quidam', 'quin', 'quom', 'reflexive_pronoun', 'sentences', 'startf', 'superlatives', 'ut', 'words']
+RF parameters: {'bootstrap': True, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': 1, 'oob_score': False, 'verbose': 0, 'warm_start': False}
+
+<span style="filter: contrast(70%) brightness(190%);color:yellow;">Misclassifications from 500 (10 * 10 * 5) trials. Each file was in the testing set 1 / 5 of the time (100 times).</span>
+100 / 100 (100.000%): tesserae/texts/la/cicero.de_haruspicum_responso.tess
+100 / 100 (100.000%): tesserae/texts/la/apuleius.florida.tess
+ 99 / 100 (99.000%): tesserae/texts/la/petronius.satyricon.tess
+ 98 / 100 (98.000%): tesserae/texts/la/cicero.paradoxa_stoicorum_ad_m_brutum.tess
+ 98 / 100 (98.000%): tesserae/texts/la/q_cicero.on_running_for_consul.tess
+ 96 / 100 (96.000%): tesserae/texts/la/sallust.histories.tess
+ 94 / 100 (94.000%): tesserae/texts/la/seneca_the_elder.fragmenta.tess
+ 93 / 100 (93.000%): tesserae/texts/la/cicero.de_officiis/cicero.de_officiis.part.1.tess
+ 93 / 100 (93.000%): tesserae/texts/la/cicero.timaeus.tess
+ 89 / 100 (89.000%): tesserae/texts/la/cicero.cum_populo_gratias_egit.tess
+ 85 / 100 (85.000%): tesserae/texts/la/cicero.pro_marcello.tess
+ 85 / 100 (85.000%): tesserae/texts/la/seneca.de_providentia.tess
+ 76 / 100 (76.000%): tesserae/texts/la/vitruvius.de_architectura/vitruvius.de_architectura.part.2.tess
+ 75 / 100 (75.000%): tesserae/texts/la/pseudo_cicero.in_sallustium.tess
+ 75 / 100 (75.000%): tesserae/texts/la/cicero.topica.tess
+ 74 / 100 (74.000%): tesserae/texts/la/cicero.de_natura_deorum/cicero.de_natura_deorum.part.2.tess
+ 72 / 100 (72.000%): tesserae/texts/la/seneca.de_consolatione_ad_polybium.tess
+ 69 / 100 (69.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.9.tess
+ 68 / 100 (68.000%): tesserae/texts/la/cicero.divinatio_in_c_verrem/cicero.divinatio_in_c_verrem.part.1.tess
+ 65 / 100 (65.000%): tesserae/texts/la/vitruvius.de_architectura/vitruvius.de_architectura.part.10.tess
+ 64 / 100 (64.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.8.tess
+ 63 / 100 (63.000%): tesserae/texts/la/seneca.de_beneficiis/seneca.de_beneficiis.part.6.tess
+ 60 / 100 (60.000%): tesserae/texts/la/seneca.de_brevitate_vitae.tess
+ 60 / 100 (60.000%): tesserae/texts/la/cicero.de_officiis/cicero.de_officiis.part.2.tess
+ 54 / 100 (54.000%): tesserae/texts/la/seneca.de_consolatione_ad_marciam.tess
+ 54 / 100 (54.000%): tesserae/texts/la/cicero.de_partitione_oratoria.tess
+ 49 / 100 (49.000%): tesserae/texts/la/pliny_the_elder.naturalis_historia/pliny_the_elder.naturalis_historia.part.1.books_1-5.tess
+ 48 / 100 (48.000%): tesserae/texts/la/marcus_mincuius_felix.octavius.tess
+ 47 / 100 (47.000%): tesserae/texts/la/cicero.in_catilinam.tess
+ 47 / 100 (47.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.9.tess
+ 46 / 100 (46.000%): tesserae/texts/la/vitruvius.de_architectura/vitruvius.de_architectura.part.9.tess
+ 46 / 100 (46.000%): tesserae/texts/la/caesar_augustus.res_gestae_divi_augusti.tess
+ 44 / 100 (44.000%): tesserae/texts/la/cicero.de_natura_deorum/cicero.de_natura_deorum.part.3.tess
+ 43 / 100 (43.000%): tesserae/texts/la/pliny_the_elder.naturalis_historia/pliny_the_elder.naturalis_historia.part.6.books_26-30.tess
+ 42 / 100 (42.000%): tesserae/texts/la/pliny_the_younger.letters/pliny_the_younger.letters.part.8.tess
+ 41 / 100 (41.000%): tesserae/texts/la/cicero.academica.tess
+ 41 / 100 (41.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.20.tess
+ 39 / 100 (39.000%): tesserae/texts/la/pliny_the_elder.naturalis_historia/pliny_the_elder.naturalis_historia.part.3.books_11-15.tess
+ 39 / 100 (39.000%): tesserae/texts/la/cicero.de_imperio_cn_pompei.tess
+ 39 / 100 (39.000%): tesserae/texts/la/tertullian.de_spectaculis.tess
+ 36 / 100 (36.000%): tesserae/texts/la/pliny_the_elder.naturalis_historia/pliny_the_elder.naturalis_historia.part.2.books_6-10.tess
+ 36 / 100 (36.000%): tesserae/texts/la/pliny_the_younger.letters/pliny_the_younger.letters.part.10.tess
+ 34 / 100 (34.000%): tesserae/texts/la/cicero.de_optimo_genere_oratorum.tess
+ 34 / 100 (34.000%): tesserae/texts/la/scriptores_historiae_augustae.historia_augusta/scriptores_historiae_augustae.historia_augusta.part.4.books_16-21.tess
+ 33 / 100 (33.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.6.tess
+ 33 / 100 (33.000%): tesserae/texts/la/celsus.de_medicina/celsus.de_medicina.part.1.tess
+ 32 / 100 (32.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.1.tess
+ 31 / 100 (31.000%): tesserae/texts/la/cicero.pro_archia.tess
+ 31 / 100 (31.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.4.tess
+ 31 / 100 (31.000%): tesserae/texts/la/seneca_the_elder.suasoriae.tess
+ 31 / 100 (31.000%): tesserae/texts/la/augustine.epistulae_selections/augustine.epistulae_selections.part.5.41-50.tess
+ 31 / 100 (31.000%): tesserae/texts/la/cicero.orator.tess
+ 30 / 100 (30.000%): tesserae/texts/la/pliny_the_elder.naturalis_historia/pliny_the_elder.naturalis_historia.part.4.books_16-20.tess
+ 29 / 100 (29.000%): tesserae/texts/la/seneca.de_consolatione_ad_helviam.tess
+ 29 / 100 (29.000%): tesserae/texts/la/tacitus.de_origine_et_situ_germanorum_liber.tess
+ 27 / 100 (27.000%): tesserae/texts/la/seneca.de_beneficiis/seneca.de_beneficiis.part.5.tess
+ 26 / 100 (26.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.13.121-124.tess
+ 25 / 100 (25.000%): tesserae/texts/la/cicero.de_oratore/cicero.de_oratore.part.1.tess
+ 25 / 100 (25.000%): tesserae/texts/la/vitruvius.de_architectura/vitruvius.de_architectura.part.4.tess
+ 24 / 100 (24.000%): tesserae/texts/la/apuleius.apologia.tess
+ 24 / 100 (24.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.12.111-120.tess
+ 24 / 100 (24.000%): tesserae/texts/la/cicero.de_officiis/cicero.de_officiis.part.3.tess
+ 24 / 100 (24.000%): tesserae/texts/la/apuleius.metamorphoses/apuleius.metamorphoses.part.1.tess
+ 24 / 100 (24.000%): tesserae/texts/la/seneca.de_ira.tess
+ 24 / 100 (24.000%): tesserae/texts/la/cicero.pro_a_caecina.tess
+ 24 / 100 (24.000%): tesserae/texts/la/tacitus.dialogus_de_oratoribus.tess
+ 21 / 100 (21.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.14.tess
+ 20 / 100 (20.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.6.51-60.tess
+ 20 / 100 (20.000%): tesserae/texts/la/cicero.pro_a_cluentio.tess
+ 19 / 100 (19.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.8.tess
+ 19 / 100 (19.000%): tesserae/texts/la/cicero.tusculanae_disputationes/cicero.tusculanae_disputationes.part.2.tess
+ 19 / 100 (19.000%): tesserae/texts/la/cicero.pro_murena.tess
+ 18 / 100 (18.000%): tesserae/texts/la/caesar.de_bello_gallico/caesar.de_bello_gallico.part.1.tess
+ 18 / 100 (18.000%): tesserae/texts/la/seneca.de_vita_beata.tess
+ 18 / 100 (18.000%): tesserae/texts/la/seneca.de_otio.tess
+ 18 / 100 (18.000%): tesserae/texts/la/cicero.de_senectute.tess
+ 18 / 100 (18.000%): tesserae/texts/la/columella.de_re_rustica/columella.de_re_rustica.part.5.tess
+ 17 / 100 (17.000%): tesserae/texts/la/cicero.brutus.tess
+ 17 / 100 (17.000%): tesserae/texts/la/cicero.pro_tullio.tess
+ 17 / 100 (17.000%): tesserae/texts/la/cicero.pro_plancio.tess
+ 17 / 100 (17.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.pr.tess
+ 16 / 100 (16.000%): tesserae/texts/la/tertullian.apologeticum.tess
+ 16 / 100 (16.000%): tesserae/texts/la/seneca.de_beneficiis/seneca.de_beneficiis.part.1.tess
+ 16 / 100 (16.000%): tesserae/texts/la/cicero.de_finibus_bonorum_et_malorum/cicero.de_finibus_bonorum_et_malorum.part.2.tess
+ 15 / 100 (15.000%): tesserae/texts/la/pliny_the_younger.letters/pliny_the_younger.letters.part.3.tess
+ 15 / 100 (15.000%): tesserae/texts/la/seneca.de_beneficiis/seneca.de_beneficiis.part.7.tess
+ 15 / 100 (15.000%): tesserae/texts/la/augustine.epistulae_selections/augustine.epistulae_selections.part.2.11-20.tess
+ 14 / 100 (14.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.9.81-90.tess
+ 14 / 100 (14.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.4.31-40.tess
+ 14 / 100 (14.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.5.41-50.tess
+ 14 / 100 (14.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.7.tess
+ 14 / 100 (14.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.11.tess
+ 14 / 100 (14.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.12.tess
+ 13 / 100 (13.000%): tesserae/texts/la/apuleius.metamorphoses/apuleius.metamorphoses.part.11.tess
+ 13 / 100 (13.000%): tesserae/texts/la/cicero.pro_scauro.tess
+ 13 / 100 (13.000%): tesserae/texts/la/vitruvius.de_architectura/vitruvius.de_architectura.part.5.tess
+ 13 / 100 (13.000%): tesserae/texts/la/vitruvius.de_architectura/vitruvius.de_architectura.part.7.tess
+ 13 / 100 (13.000%): tesserae/texts/la/columella.de_re_rustica/columella.de_re_rustica.part.1.tess
+ 12 / 100 (12.000%): tesserae/texts/la/cicero.de_provinciis_consularibus.tess
+ 12 / 100 (12.000%): tesserae/texts/la/columella.de_re_rustica/columella.de_re_rustica.part.3.tess
+ 12 / 100 (12.000%): tesserae/texts/la/cicero.epistulae_ad_familiares/cicero.epistulae_ad_familiares.part.14.ad_terentiam_uxorem.tess
+ 12 / 100 (12.000%): tesserae/texts/la/cicero.pro_ligario.tess
+ 12 / 100 (12.000%): tesserae/texts/la/seneca_the_elder.excerpta_controversiae.tess
+ 11 / 100 (11.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.11.tess
+ 11 / 100 (11.000%): tesserae/texts/la/seneca.de_beneficiis/seneca.de_beneficiis.part.2.tess
+ 11 / 100 (11.000%): tesserae/texts/la/pliny_the_younger.letters/pliny_the_younger.letters.part.2.tess
+ 10 / 100 (10.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.8.71-80.tess
+ 10 / 100 (10.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.10.tess
+ 10 / 100 (10.000%): tesserae/texts/la/cicero.pro_q_roscio_comoedo.tess
+ 10 / 100 (10.000%): tesserae/texts/la/cicero.epistulae_ad_familiares/cicero.epistulae_ad_familiares.part.1.ad_lentulum.tess
+ 10 / 100 (10.000%): tesserae/texts/la/pseudo_quintilian.major_declamations.tess
+ 10 / 100 (10.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.1.1-10.tess
+  9 / 100 (9.000%): tesserae/texts/la/cicero.de_oratore/cicero.de_oratore.part.2.tess
+  9 / 100 (9.000%): tesserae/texts/la/sallust.catilina.tess
+  9 / 100 (9.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.7.tess
+  9 / 100 (9.000%): tesserae/texts/la/cicero.pro_m_caelio.tess
+  8 / 100 (8.000%): tesserae/texts/la/seneca.de_beneficiis/seneca.de_beneficiis.part.4.tess
+  8 / 100 (8.000%): tesserae/texts/la/curtius_rufus.historiae_alexandri_magni/curtius_rufus.historiae_alexandri_magni.part.6.tess
+  8 / 100 (8.000%): tesserae/texts/la/cicero.divinatio_in_q_caecilium.tess
+  8 / 100 (8.000%): tesserae/texts/la/cicero.post_reditum_in_senatu.tess
+  8 / 100 (8.000%): tesserae/texts/la/cicero.pro_s_roscio.tess
+  8 / 100 (8.000%): tesserae/texts/la/pliny_the_younger.letters/pliny_the_younger.letters.part.5.tess
+  8 / 100 (8.000%): tesserae/texts/la/cicero.de_fato.tess
+  7 / 100 (7.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.17.tess
+  7 / 100 (7.000%): tesserae/texts/la/cicero.pro_c_rabirio_postumo.tess
+  7 / 100 (7.000%): tesserae/texts/la/vitruvius.de_architectura/vitruvius.de_architectura.part.3.tess
+  7 / 100 (7.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.7.61-70.tess
+  6 / 100 (6.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.6.tess
+  6 / 100 (6.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.2.tess
+  6 / 100 (6.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.1.tess
+  6 / 100 (6.000%): tesserae/texts/la/seneca.de_constantia.tess
+  6 / 100 (6.000%): tesserae/texts/la/livy.ab_urbe_condita/livy.ab_urbe_condita.part.4.books_41-45.tess
+  6 / 100 (6.000%): tesserae/texts/la/columella.de_re_rustica/columella.de_re_rustica.part.9.tess
+  6 / 100 (6.000%): tesserae/texts/la/valerius_maximus.facta_et_dicta_memorabilia/valerius_maximus.facta_et_dicta_memorabilia.part.4.tess
+  6 / 100 (6.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.3.21-30.tess
+  6 / 100 (6.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.11.101-110.tess
+  6 / 100 (6.000%): tesserae/texts/la/seneca_the_elder.controversiae/seneca_the_elder.controversiae.part.7.tess
+  5 / 100 (5.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.4.tess
+  5 / 100 (5.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.10.91-100.tess
+  5 / 100 (5.000%): tesserae/texts/la/apuleius.metamorphoses/apuleius.metamorphoses.part.9.tess
+  5 / 100 (5.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.8.tess
+  5 / 100 (5.000%): tesserae/texts/la/seneca_the_elder.controversiae/seneca_the_elder.controversiae.part.8.tess
+  5 / 100 (5.000%): tesserae/texts/la/seneca.de_clementia.tess
+  5 / 100 (5.000%): tesserae/texts/la/seneca.de_tranquillitate_animi.tess
+  5 / 100 (5.000%): tesserae/texts/la/cicero.letters_to_atticus/cicero.letters_to_atticus.part.6.tess
+  5 / 100 (5.000%): tesserae/texts/la/augustine.epistulae_selections/augustine.epistulae_selections.part.6.51-62.tess
+  4 / 100 (4.000%): tesserae/texts/la/cicero.pro_fonteio.tess
+  4 / 100 (4.000%): tesserae/texts/la/sallust.jugurtha.tess
+  4 / 100 (4.000%): tesserae/texts/la/pliny_the_elder.naturalis_historia/pliny_the_elder.naturalis_historia.part.7.books_31-37.tess
+  4 / 100 (4.000%): tesserae/texts/la/cicero.pro_balbo.tess
+  4 / 100 (4.000%): tesserae/texts/la/cicero.tusculanae_disputationes/cicero.tusculanae_disputationes.part.4.tess
+  4 / 100 (4.000%): tesserae/texts/la/cicero.de_inventione/cicero.de_inventione.part.2.tess
+  4 / 100 (4.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.5.tess
+  4 / 100 (4.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.4.tess
+  4 / 100 (4.000%): tesserae/texts/la/cicero.epistulae_ad_familiares/cicero.epistulae_ad_familiares.part.8.caeli_epistulae_ad_ciceronem.tess
+  4 / 100 (4.000%): tesserae/texts/la/seneca.de_beneficiis/seneca.de_beneficiis.part.3.tess
+  4 / 100 (4.000%): tesserae/texts/la/cicero.letters_to_brutus.tess
+  4 / 100 (4.000%): tesserae/texts/la/livy.ab_urbe_condita/livy.ab_urbe_condita.part.3.books_31-40.tess
+  4 / 100 (4.000%): tesserae/texts/la/cicero.epistulae_ad_familiares/cicero.epistulae_ad_familiares.part.10.ad_plancum_et_ceteros.tess
+  4 / 100 (4.000%): tesserae/texts/la/vitruvius.de_architectura/vitruvius.de_architectura.part.6.tess
+  4 / 100 (4.000%): tesserae/texts/la/apuleius.metamorphoses/apuleius.metamorphoses.part.10.tess
+  3 / 100 (3.000%): tesserae/texts/la/cicero.divinatio_in_c_verrem/cicero.divinatio_in_c_verrem.part.5.tess
+  3 / 100 (3.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.15.tess
+  3 / 100 (3.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.1.tess
+  3 / 100 (3.000%): tesserae/texts/la/pliny_the_elder.naturalis_historia/pliny_the_elder.naturalis_historia.part.5.books_21-25.tess
+  3 / 100 (3.000%): tesserae/texts/la/seneca_the_elder.controversiae/seneca_the_elder.controversiae.part.10.tess
+  3 / 100 (3.000%): tesserae/texts/la/seneca.ad_lucilium_epistulae_morales/seneca.ad_lucilium_epistulae_morales.part.2.11-20.tess
+  3 / 100 (3.000%): tesserae/texts/la/augustine.epistulae_selections/augustine.epistulae_selections.part.4.31-40.tess
+  3 / 100 (3.000%): tesserae/texts/la/cicero.epistulae_ad_familiares/cicero.epistulae_ad_familiares.part.13.ad_memmium_et_ceteros.tess
+  3 / 100 (3.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.10.tess
+  3 / 100 (3.000%): tesserae/texts/la/cicero.de_divinatione.tess
+  3 / 100 (3.000%): tesserae/texts/la/livy.ab_urbe_condita/livy.ab_urbe_condita.part.1.books_1-10.tess
+  3 / 100 (3.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.13.tess
+  3 / 100 (3.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.12.tess
+  3 / 100 (3.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.3.tess
+  3 / 100 (3.000%): tesserae/texts/la/cicero.lucullus.tess
+  3 / 100 (3.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.5.tess
+  3 / 100 (3.000%): tesserae/texts/la/cicero.de_amicitia.tess
+  2 / 100 (2.000%): tesserae/texts/la/cicero.de_inventione/cicero.de_inventione.part.1.tess
+  2 / 100 (2.000%): tesserae/texts/la/cicero.tusculanae_disputationes/cicero.tusculanae_disputationes.part.3.tess
+  2 / 100 (2.000%): tesserae/texts/la/pliny_the_younger.letters/pliny_the_younger.letters.part.6.tess
+  2 / 100 (2.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.3.tess
+  2 / 100 (2.000%): tesserae/texts/la/cicero.tusculanae_disputationes/cicero.tusculanae_disputationes.part.1.tess
+  2 / 100 (2.000%): tesserae/texts/la/cicero.letters_to_quintus.tess
+  2 / 100 (2.000%): tesserae/texts/la/cicero.letters_to_atticus/cicero.letters_to_atticus.part.2.tess
+  2 / 100 (2.000%): tesserae/texts/la/quintilian.institutio_oratoria/quintilian.institutio_oratoria.part.3.tess
+  2 / 100 (2.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.6.tess
+  2 / 100 (2.000%): tesserae/texts/la/apuleius.metamorphoses/apuleius.metamorphoses.part.8.tess
+  1 / 100 (1.000%): tesserae/texts/la/augustine.epistulae_selections/augustine.epistulae_selections.part.3.21-30.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.2.tess
+  1 / 100 (1.000%): tesserae/texts/la/vitruvius.de_architectura/vitruvius.de_architectura.part.1.tess
+  1 / 100 (1.000%): tesserae/texts/la/seneca_the_elder.controversiae/seneca_the_elder.controversiae.part.1.tess
+  1 / 100 (1.000%): tesserae/texts/la/columella.de_re_rustica/columella.de_re_rustica.part.6.tess
+  1 / 100 (1.000%): tesserae/texts/la/columella.de_re_rustica/columella.de_re_rustica.part.4.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.pro_sestio.tess
+  1 / 100 (1.000%): tesserae/texts/la/tacitus.annales/tacitus.annales.part.16.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.letters_to_atticus/cicero.letters_to_atticus.part.10.tess
+  1 / 100 (1.000%): tesserae/texts/la/curtius_rufus.historiae_alexandri_magni/curtius_rufus.historiae_alexandri_magni.part.8.tess
+  1 / 100 (1.000%): tesserae/texts/la/pliny_the_younger.letters/pliny_the_younger.letters.part.9.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.pro_c_rabirio.tess
+  1 / 100 (1.000%): tesserae/texts/la/caesar.de_bello_gallico/caesar.de_bello_gallico.part.4.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.10.tess
+  1 / 100 (1.000%): tesserae/texts/la/pliny_the_younger.letters/pliny_the_younger.letters.part.1.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.de_finibus_bonorum_et_malorum/cicero.de_finibus_bonorum_et_malorum.part.5.tess
+  1 / 100 (1.000%): tesserae/texts/la/ammianus.rerum_gestarum/ammianus.rerum_gestarum.part.19.tess
+  1 / 100 (1.000%): tesserae/texts/la/scriptores_historiae_augustae.historia_augusta/scriptores_historiae_augustae.historia_augusta.part.3.books_11-15.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.philippicae/cicero.philippicae.part.7.tess
+  1 / 100 (1.000%): tesserae/texts/la/curtius_rufus.historiae_alexandri_magni/curtius_rufus.historiae_alexandri_magni.part.7.tess
+  1 / 100 (1.000%): tesserae/texts/la/curtius_rufus.historiae_alexandri_magni/curtius_rufus.historiae_alexandri_magni.part.9.tess
+  1 / 100 (1.000%): tesserae/texts/la/nepos.vitae.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.pro_rege_deiotaro.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.de_republica.tess
+  1 / 100 (1.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.2.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.de_finibus_bonorum_et_malorum/cicero.de_finibus_bonorum_et_malorum.part.3.tess
+  1 / 100 (1.000%): tesserae/texts/la/gellius.attic_nights/gellius.attic_nights.part.5.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.de_natura_deorum/cicero.de_natura_deorum.part.1.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.in_vatinium.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.de_finibus_bonorum_et_malorum/cicero.de_finibus_bonorum_et_malorum.part.4.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.letters_to_atticus/cicero.letters_to_atticus.part.14.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.de_finibus_bonorum_et_malorum/cicero.de_finibus_bonorum_et_malorum.part.1.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.epistulae_ad_familiares/cicero.epistulae_ad_familiares.part.11.at_brutum_et_ceteros.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.divinatio_in_c_verrem/cicero.divinatio_in_c_verrem.part.2.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.letters_to_atticus/cicero.letters_to_atticus.part.15.tess
+  1 / 100 (1.000%): tesserae/texts/la/cicero.pro_publio_quinctio.tess
+  1 / 100 (1.000%): tesserae/texts/la/vitruvius.de_architectura/vitruvius.de_architectura.part.8.tess
+
+
+<span style="filter: contrast(70%) brightness(190%);color:lime;">Elapsed time: 13.0948 seconds</span>
+
+<span style="filter: contrast(70%) brightness(190%);color:red;">Random Forest Gini feature rankings</span>
+Obtain rankings by testing different RF seeds and different data splits
+RF seeds tested: 0-9 (inclusive)
+Cross validation splitter seeds tested: 0-9 (inclusive)
+Number of splits: 5
+Labels tested: [history (value of history), oratory (value of oratory), miscellaneous (value of miscellaneous), letters (value of letters), technical_treatise (value of technical_treatise), philosophy (value of philosophy)]
+Features tested: ['alius', 'anteq', 'characters', 'conditional_clauses', 'cum_clause', 'demonstrative_pronoun', 'dum', 'end_gerund', 'endf', 'idem', 'interrogative', 'ipse', 'iste', 'mean_sentence', 'multi_occurence', 'personal_pronoun', 'prepositions', 'priu', 'quidam', 'quin', 'quom', 'reflexive_pronoun', 'sentences', 'startf', 'superlatives', 'ut', 'words']
+RF parameters: {'bootstrap': True, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': 1, 'oob_score': False, 'verbose': 0, 'warm_start': False}
+
+<span style="filter: contrast(70%) brightness(190%);color:yellow;">Gini importance averages from 500 (10 * 10 * 5) trials</span>
+	0.121560 +/- standard deviation of 0.028378: personal_pronoun
+	0.103845 +/- standard deviation of 0.026300: conditional_clauses
+	0.078507 +/- standard deviation of 0.020646: iste
+	0.077470 +/- standard deviation of 0.020278: interrogative
+	0.057321 +/- standard deviation of 0.013599: ut
+	0.055829 +/- standard deviation of 0.015003: multi_occurence
+	0.047720 +/- standard deviation of 0.011977: mean_sentence
+	0.040787 +/- standard deviation of 0.011894: quidam
+	0.040478 +/- standard deviation of 0.013606: end_gerund
+	0.038824 +/- standard deviation of 0.012148: superlatives
+	0.037379 +/- standard deviation of 0.013945: demonstrative_pronoun
+	0.032606 +/- standard deviation of 0.009038: startf
+	0.032225 +/- standard deviation of 0.009188: reflexive_pronoun
+	0.031866 +/- standard deviation of 0.010008: alius
+	0.023192 +/- standard deviation of 0.007479: sentences
+	0.021580 +/- standard deviation of 0.007912: idem
+	0.020837 +/- standard deviation of 0.007649: words
+	0.020788 +/- standard deviation of 0.006748: characters
+	0.020540 +/- standard deviation of 0.007071: ipse
+	0.017685 +/- standard deviation of 0.006399: prepositions
+	0.017190 +/- standard deviation of 0.006062: cum_clause
+	0.015570 +/- standard deviation of 0.006547: dum
+	0.013799 +/- standard deviation of 0.005564: anteq
+	0.011737 +/- standard deviation of 0.004363: quin
+	0.007349 +/- standard deviation of 0.004340: endf
+	0.006720 +/- standard deviation of 0.003583: priu
+	0.006598 +/- standard deviation of 0.003507: quom
+
+
+<span style="filter: contrast(70%) brightness(190%);color:lime;">Elapsed time: 12.8411 seconds</span>
+
+<span style="filter: contrast(70%) brightness(190%);color:red;">Random Forest permutation importance feature rankings</span>
+Obtain rankings by testing different RF seeds and different data splits
+RF seeds tested: 0-4 (inclusive)
+Cross validation splitter seeds tested: 0-4 (inclusive)
+Number of splits: 5
+Number of permutations tested: 5
+Labels tested: [history (value of history), oratory (value of oratory), miscellaneous (value of miscellaneous), letters (value of letters), technical_treatise (value of technical_treatise), philosophy (value of philosophy)]
+Features tested: ['alius', 'anteq', 'characters', 'conditional_clauses', 'cum_clause', 'demonstrative_pronoun', 'dum', 'end_gerund', 'endf', 'idem', 'interrogative', 'ipse', 'iste', 'mean_sentence', 'multi_occurence', 'personal_pronoun', 'prepositions', 'priu', 'quidam', 'quin', 'quom', 'reflexive_pronoun', 'sentences', 'startf', 'superlatives', 'ut', 'words']
+RF parameters: {'bootstrap': True, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': 1, 'oob_score': False, 'verbose': 0, 'warm_start': False}
+
+<span style="filter: contrast(70%) brightness(190%);color:yellow;">Permutation importance averages from 625 (5 * 5 * 5 * 5) trials</span>
+	0.131628 +/- standard deviation of 0.004854: conditional_clauses
+	0.101656 +/- standard deviation of 0.002848: personal_pronoun
+	0.076169 +/- standard deviation of 0.001751: iste
+	0.062490 +/- standard deviation of 0.001664: interrogative
+	0.034975 +/- standard deviation of 0.000834: mean_sentence
+	0.034817 +/- standard deviation of 0.001139: ut
+	0.033915 +/- standard deviation of 0.000953: multi_occurence
+	0.022715 +/- standard deviation of 0.000853: quidam
+	0.020349 +/- standard deviation of 0.000549: superlatives
+	0.014468 +/- standard deviation of 0.000596: alius
+	0.011808 +/- standard deviation of 0.000431: startf
+	0.011155 +/- standard deviation of 0.000432: reflexive_pronoun
+	0.010727 +/- standard deviation of 0.000280: sentences
+	0.010546 +/- standard deviation of 0.000489: end_gerund
+	0.007346 +/- standard deviation of 0.000413: demonstrative_pronoun
+	0.004620 +/- standard deviation of 0.000265: words
+	0.004575 +/- standard deviation of 0.000260: characters
+	0.004282 +/- standard deviation of 0.000277: idem
+	0.003966 +/- standard deviation of 0.000180: anteq
+	0.003944 +/- standard deviation of 0.000235: cum_clause
+	0.003673 +/- standard deviation of 0.000228: ipse
+	0.002456 +/- standard deviation of 0.000161: prepositions
+	0.002411 +/- standard deviation of 0.000169: dum
+	0.001623 +/- standard deviation of 0.000169: quin
+	0.001127 +/- standard deviation of 0.000083: priu
+	0.001059 +/- standard deviation of 0.000064: quom
+	-0.000158 +/- standard deviation of 0.000078: endf
+
+
+<span style="filter: contrast(70%) brightness(190%);color:lime;">Elapsed time: 37.2427 seconds</span>
+
+</pre>
+</body>
+</html>
